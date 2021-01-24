@@ -1,0 +1,20 @@
+					Payment Api Project 
+
+
+1. please create virtual enviroment of python in /var/www/html/yourprojectfolder
+2. After creating virtual enviroment activate them and install requirement.txt using below command
+                           "pipe install -r requirements.txt"
+
+3. This api has only one end point http://127.0.0.1:5000/api/v1/process-payment 
+
+	{
+	"CreditCardNumber":"12345674321234",
+	"ExpirationDate":"2023/09/21",
+	"SecurityCode":"123",
+	"Amount":560.0
+	}
+
+	The above format is used to hit the API and only post method is allowed.
+	CreditCardNumber should be 12 digit only.
+	ExpirationDate format should be YYYY/MM/DD
+	"SecurityCode" key is not compulsory.
